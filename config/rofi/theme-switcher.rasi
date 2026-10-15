@@ -1,0 +1,112 @@
+/*
+ * theme-switcher.rasi  (grid launcher)
+ * Options live in config.rasi. Every color comes from
+ * colors.rasi, which generate-theme.sh rewrites on each theme switch.
+ * Rofi re-reads its theme on every launch, so no reload step is needed.
+ *
+ * Grid size: change `columns` and `lines` in listview (and `width` in
+ * window if you change columns).
+ */
+
+@import "colors.rasi"
+
+* {
+    background-color: transparent;
+    text-color:       @text;
+    margin:           0;
+    padding:          0;
+    spacing:          0;
+}
+
+window {
+    location:         center;
+    width:            820px;
+    background-color: @dark-9;
+    border:           1px;
+    border-color:     @accent;
+    border-radius:    2px;
+}
+
+mainbox {
+    padding:  16px;
+    spacing:  14px;
+    children: [ inputbar, listview ];
+}
+
+/* search bar ------------------------------------------------------ */
+inputbar {
+    background-color: @dark-8;
+    border:           1px;
+    border-color:     @dark-6;
+    border-radius:    2px;
+    padding:          10px 16px;
+    spacing:          10px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color: @highlight;
+}
+
+entry {
+    placeholder:       "Search...";
+    placeholder-color: @inactive;
+    cursor-color:      @highlight;
+}
+
+/* app grid -------------------------------------------------------- */
+listview {
+    columns:      5;
+    lines:        3;
+    flow:         horizontal;
+    fixed-height: true;
+    fixed-columns: true;
+    scrollbar:    false;
+    spacing:      8px;
+}
+
+element {
+    orientation:   vertical;
+    padding:       16px 6px 12px 6px;
+    spacing:       8px;
+    border-radius: 10px;
+}
+
+element-icon {
+    size:             64px;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    text-color:       inherit;
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @text;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color:       @text;
+}
+
+element normal.active,
+element alternate.active {
+    text-color: @highlight;
+}
+
+element selected.active {
+    background-color: @accent;
+    text-color:       @highlight;
+}
+
+element normal.urgent,
+element alternate.urgent,
+element selected.urgent {
+    background-color: @urgent-bg;
+    text-color:       @urgent-fg;
+}

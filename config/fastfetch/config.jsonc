@@ -1,0 +1,42 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "de",
+    "wm",
+    "terminal",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "break",
+    "colors"
+  ],
+  "logo": {
+        "type": "auto",
+        "source": "arch",
+        "color": {
+            "1": "#ff0000", // Sets primary color of the Arch logo to red
+            "2": "#aa0000"
+          }
+    },
+    
+    "display": {
+        "separator": "  ",
+        "color": {
+            "keys": "red",  // Sets hardware/system labels to red
+            "title": "red"  // Sets username@hostname to red
+        }
+    },
+
+
+}
+

@@ -1,0 +1,24 @@
+{
+    "label": "lock",
+    "action": "hyprlock",
+    "text": "Lock",
+    "keybind": "l"
+}
+{
+    "label": "signout",
+    "action": "python3 ~/.config/hypr/scripts/corner-fade.py",
+    "text": "Sign Out",
+    "keybind": "e"
+}
+{
+    "label": "reboot",
+    "action": "systemctl reboot",
+    "text": "Reboot",
+    "keybind": "r"
+}
+{
+    "label": "shutdown",
+    "action": "systemctl poweroff",
+    "text": "Shutdown",
+    "keybind": "s"
+}

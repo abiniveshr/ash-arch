@@ -1,0 +1,125 @@
+@import url("colors.css");
+
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: JetBrainsMono Nerd Font Propo;
+  font-size: 16px;
+}
+
+#workspaces button {
+    transition: all 0.1s ease-in-out;
+}
+
+#clock {
+  color: @text;
+}
+#tray {
+    padding: 0 10px;
+}
+
+#tray > * {
+    margin: 0 8px;
+    padding: 0 8px;
+}
+window#waybar {
+  background-color: @dark-9;
+  color: @text;
+  border: @accent;
+  border-bottom: 2px solid @accent;
+}
+
+#workspaces button {
+  padding: 3px;
+  margin: 7px 0px 7px 7px;
+  background: transparent;
+  border-radius: 2px;
+  color: @ws-button;
+}
+
+#workspaces button.active {
+  background: @dark-9;
+  color: @highlight;
+  font-weight: 700;
+}
+
+#workspaces button.empty {
+    opacity: 0.35;
+}
+
+#submap,
+#battery,
+#bluetooth,
+#network,
+#volume,
+#custom-power {
+  border-radius: 8px;
+  padding: 5px 8px;
+  margin: 5px 10px 5px 0px;
+}
+#custom-power:hover {
+    color: @hover;
+    border-radius: 8px;
+}
+#submap,
+#workspaces button.urgent {
+  background: @urgent-bg;
+  color: @urgent-fg;
+}
+
+#pulseaudio-slider {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 8px;
+}
+
+#pulseaudio-slider slider {
+  all: unset;
+  min-height: 0;
+  min-width: 0;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+  min-height: 8px;
+  min-width: 75px;
+  border-radius: 5px;
+  background: @dark-7;
+}
+
+#pulseaudio-slider highlight {
+  min-width: 0px;
+  border-radius: 5px;
+  background: @highlight;
+}
+
+#media {
+  color: @highlight;
+  margin: 7px 0px 7px 80px;
+}
+
+#custom-media-animation {
+  font-size: 13px;
+  margin-right: 10px;
+  color: @media-fg;
+}
+
+#custom-media-now-playing {
+  margin-right: 10px;
+}
+
+#custom-media-time {
+  color: @media-time;
+  font-size: 14px;
+}
+
+tooltip {
+  background: @dark-9;
+  border-radius: 5px;
+}
+
+tooltip label {
+  color: @text;
+}

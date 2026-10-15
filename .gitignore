@@ -1,0 +1,22 @@
+# Editor backups
+*.swp
+*.bak
+*~
+*.tmp
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# Archives and generated junk
+*.zip
+*.tar
+*.tar.gz
+.DS_Store
