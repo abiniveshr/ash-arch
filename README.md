@@ -1,7 +1,7 @@
 # Arch Linux Dotfiles
 
 My personal Arch Linux rice running Hyprland on an ASUS laptop.
-
+**check screenies folder for showcase**
 This repo contains the configs and scripts I use to make my desktop look and behave the way I want. It's tailored to my setup, so some things may depend on my hardware, installed packages, and existing system configuration.
 
 # What is in here
@@ -22,7 +22,7 @@ This repo contains the configs and scripts I use to make my desktop look and beh
 
 - `config/` — application and desktop configs
 - `scripts/` — custom scripts, including theme-switching utilities
-- `wallpapers/` — wallpapers folder is empty; **i couldn't distribute them because i didnt make them, kindly look it up on google image search to find them**
+- `wallpapers/` — wallpapers folder is empty;1 **i couldn't distribute them because i didnt make them, kindly look it up on google image search to find them**
 - `packages.txt` — explicitly installed Arch packages
 
 # What is not in this repo
