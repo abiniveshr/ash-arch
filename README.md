@@ -1,6 +1,6 @@
 # Arch Linux Dotfiles
 
-My personal Arch Linux rice running Hyprland on an ASUS laptop.
+My personal Arch Linux rice running Hyprland on an ASUS TUF laptop.
 **check screenies folder for showcase**
 This repo contains the configs and scripts I use to make my desktop look and behave the way I want. It's tailored to my setup, so some things may depend on my hardware, installed packages, and existing system configuration.
 
@@ -31,6 +31,12 @@ This repo contains the configs and scripts I use to make my desktop look and beh
  (White Keyboard and Black and White image of TON 618 ---> Red Keyboard and Red/Orange TON-618) [not included in this installation, it is device specific and needs helper functions with tee]
 - **neovim** configured but not shared (incomplete)
 - **Jetbrains Mono Nerd** personal favourite font (not larp trust)
+
+# My System
+- i7 13620H
+- 1x16G DDR5 @5600MHz
+- RTX 4060 Laptop GPU (140W TDP)
+- 512GB SSD
 
 # Notes
 
